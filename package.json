@@ -1,0 +1,29 @@
+{
+  "name": "eslint-config-wolfy1339",
+  "version": "1.0.0",
+  "description": "My base eslint config shared troughout my projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wolfy1339/eslint-config-wolfy1339.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-config"
+  ],
+  "author": "wolfy1339 <webmaster@wolfy1339.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wolfy1339/eslint-config-wolfy1339/issues"
+  },
+  "homepage": "https://github.com/wolfy1339/eslint-config-wolfy1339#readme",
+  "dependencies": {
+    "eslint-config-google": "^0.9.1"
+  },
+  "peerDependencies": {
+      "eslint": ">=5"
+  }
+}
