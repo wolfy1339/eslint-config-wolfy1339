@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-wolfy1339",
+  "name": "@hellomouse/eslint-config-wolfy1339",
   "version": "1.0.0",
   "description": "My base eslint config shared troughout my projects",
   "main": "index.js",
