@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/wolfy1339/eslint-config-wolfy1339#readme",
   "dependencies": {
-    "eslint-config-google": "^0.9.1"
+    "eslint-config-google": "^0.10.0"
   },
   "peerDependencies": {
       "eslint": ">=5"
