@@ -1,26 +1,8 @@
 module.exports = {
-    env: {
-        es6: true,
-        node: true,
-    },
-    parserOptions: {
-        ecmaVersion: 2018,
-        sourceType: 'module',
-    },
+    plugins: ['jsdoc'],
     extends: ['eslint:recommended', 'google'],
     rules: {
-        'require-jsdoc': [
-            'warn',
-            {
-                require: {
-                    FunctionDeclaration: true,
-                    MethodDefinition: true,
-                    ClassDeclaration: true,
-                    ArrowFunctionExpression: true,
-                    FunctionExpression: true
-                }
-            }
-        ],
+        'require-jsdoc': 'off',
         'comma-dangle': [
             'error',
             'never'
@@ -102,5 +84,15 @@ module.exports = {
             'always'
         ],
         'prefer-template': 'error'
+    },
+    settings: {
+    jsdoc: {
+      tagNamePreference: {
+        // keep the ones currently in use
+        returns: { replacement: 'return' },
+        yields: { replacement: 'yield' },
+        augments: { replacement: 'extends' }
+      }
     }
+  }
 };
