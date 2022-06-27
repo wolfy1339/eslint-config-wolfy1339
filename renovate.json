@@ -1,0 +1,26 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":disableDependencyDashboard"
+  ],
+  "rangeStrategy": "replace",
+  "semanticCommitType": "build",
+  "packageRules": [
+    {
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "semanticCommitType": "chore"
+    },
+    {
+      "depTypeList": ["dependencies"],
+      "semanticCommitType": "fix"
+    },
+    {
+      "depTypeList": ["action"],
+      "semanticCommitType": "ci",
+      "semanticCommitScope": "action"
+    }
+  ]
+}
