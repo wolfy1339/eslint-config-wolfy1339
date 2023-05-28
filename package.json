@@ -25,7 +25,7 @@
   },
   "peerDependencies": {
     "eslint": ">=5",
-    "eslint-plugin-jsdoc": "^44.2.3"
+    "eslint-plugin-jsdoc": "^45.0.0"
   },
   "devDependencies": {
     "@types/eslint": "^8.37.0"
