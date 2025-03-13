@@ -25,20 +25,20 @@ export default [
 
     rules: {
       'require-jsdoc': 'off',
-      'comma-dangle': ['error', 'never'],
+      '@stylistic/comma-dangle': ['error', 'never'],
 
-      'padded-blocks': [
+      '@stylistic/padded-blocks': [
         'error',
         {
           blocks: 'never'
         }
       ],
 
-      'arrow-parens': ['error', 'as-needed'],
+      '@stylistic/arrow-parens': ['error', 'as-needed'],
       'one-var': 'off',
       camelcase: 'off',
 
-      'max-len': [
+      '@stylistic/max-len': [
         'error',
         {
           code: 120,
@@ -51,9 +51,9 @@ export default [
 
       'id-match': 'off',
       curly: 'off',
-      'block-spacing': ['error', 'always'],
+      '@stylistic/block-spacing': ['error', 'always'],
 
-      'brace-style': [
+      '@stylistic/brace-style': [
         'error',
         '1tbs',
         {
@@ -61,9 +61,9 @@ export default [
         }
       ],
 
-      'object-curly-spacing': ['error', 'always'],
+      '@stylistic/object-curly-spacing': ['error', 'always'],
 
-      'space-unary-ops': [
+      '@stylistic/space-unary-ops': [
         'error',
         {
           words: true,
@@ -71,7 +71,7 @@ export default [
         }
       ],
 
-      'padding-line-between-statements': [
+      '@stylistic/padding-line-between-statements': [
         'error',
         {
           blankLine: 'always',
@@ -105,8 +105,8 @@ export default [
       'block-scoped-var': 'error',
       'no-else-return': 'error',
       'no-undef-init': 'error',
-      'quote-props': ['error', 'as-needed'],
-      semi: ['error', 'always'],
+      '@stylistic/quote-props': ['error', 'as-needed'],
+      '@stylistic/semi': ['error', 'always'],
       'prefer-template': 'error'
     }
   }
