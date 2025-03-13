@@ -38,8 +38,7 @@
     "@hellomouse/eslint-config-google": "^0.15.0-flat.3"
   },
   "publishConfig": {
-    "access": "public",
-    "provenance": true
+    "access": "public"
   },
   "exports": {
     ".": {
