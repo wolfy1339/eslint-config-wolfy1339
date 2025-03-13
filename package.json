@@ -1,8 +1,9 @@
 {
   "name": "@hellomouse/eslint-config-wolfy1339",
-  "version": "1.4.1",
+  "version": "2.0.0",
   "description": "My base eslint config shared troughout my projects",
-  "main": "index.js",
+  "main": "index.cjs",
+  "module": "index.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\""
   },
@@ -20,14 +21,30 @@
     "url": "https://github.com/wolfy1339/eslint-config-wolfy1339/issues"
   },
   "homepage": "https://github.com/wolfy1339/eslint-config-wolfy1339#readme",
-  "dependencies": {
-    "eslint-config-google": "^0.14.0"
-  },
+  "files": [
+    "index.cjs",
+    "index.mjs",
+    "LICENSE",
+    "README.md"
+  ],
   "peerDependencies": {
-    "eslint": ">=5",
-    "eslint-plugin-jsdoc": "^46.0.0"
+    "eslint": ">=9.0.0"
   },
   "devDependencies": {
-    "@types/eslint": "^8.37.0"
+    "@types/eslint": "^9.6.1"
+  },
+  "dependencies": {
+    "@eslint/js": "^9.22.0",
+    "@hellomouse/eslint-config-google": "^0.15.0-flat.3"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    }
   }
 }
